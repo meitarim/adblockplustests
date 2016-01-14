@@ -43,7 +43,7 @@
         Prefs.enabled = true;
       setTimeout(function()
       {
-        is(element.getAttribute("abpstate"), "active", "Checking icon state when Adblock Plus is enabled");
+        is(element.getAttribute("abpstate"), "active", "Checking icon state when Adblocky is enabled");
         runNextTest();
       }, 0);
     }
@@ -54,7 +54,7 @@
         Prefs.enabled = false;
       setTimeout(function()
       {
-        is(element.getAttribute("abpstate"), "disabled", "Checking icon state when Adblock Plus is disabled");
+        is(element.getAttribute("abpstate"), "disabled", "Checking icon state when Adblocky is disabled");
         runNextTest();
       }, 0);
     }

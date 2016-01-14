@@ -126,10 +126,10 @@
 
     let tests = [
       {header: "[Adblock]", downloadStatus: "synchronize_ok", requiredVersion: null},
-      {header: "[Adblock Plus]", downloadStatus: "synchronize_ok", requiredVersion: null},
+      {header: "[Adblocky]", downloadStatus: "synchronize_ok", requiredVersion: null},
       {header: "(something)[Adblock]", downloadStatus: "synchronize_ok", requiredVersion: null},
-      {header: "[Adblock Plus 0.0.1]", downloadStatus: "synchronize_ok", requiredVersion: "0.0.1"},
-      {header: "[Adblock Plus 99.9]", downloadStatus: "synchronize_ok", requiredVersion: "99.9"},
+      {header: "[Adblocky 0.0.1]", downloadStatus: "synchronize_ok", requiredVersion: "0.0.1"},
+      {header: "[Adblocky 99.9]", downloadStatus: "synchronize_ok", requiredVersion: "99.9"},
       {header: "[Foo]", downloadStatus: "synchronize_invalid_data", requiredVersion: null}
     ];
     for (test of tests)
@@ -284,7 +284,7 @@
       ["Lines with spaces not ignored", "[Adblock]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A\n \nfoo\n\nbar\n", false],
       ["Extra content in checksum line is part of the checksum", "[Adblock]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A foobar\nfoo\nbar\n", false],
       ["= symbols after checksum are ignored", "[Adblock]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A===\nfoo\nbar\n", true],
-      ["Header line is part of the checksum", "[Adblock Plus]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A\nfoo\nbar\n", false],
+      ["Header line is part of the checksum", "[Adblocky]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A\nfoo\nbar\n", false],
       ["Special comments are part of the checksum", "[Adblock]\n! Checksum: e/JCmqXny6Fn24b7JHsq/A\n! Expires: 1\nfoo\nbar\n", false],
     ];
 
