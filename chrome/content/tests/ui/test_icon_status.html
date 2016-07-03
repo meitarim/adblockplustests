@@ -43,7 +43,7 @@
         Prefs.enabled = true;
       setTimeout(function()
       {
-        is(element.getAttribute("abpstate"), "active", "Checking icon state when Community Adblock is enabled");
+        is(element.getAttribute("abpstate"), "active", "Checking icon state when Ad Blocking Community is enabled");
         runNextTest();
       }, 0);
     }
@@ -54,7 +54,7 @@
         Prefs.enabled = false;
       setTimeout(function()
       {
-        is(element.getAttribute("abpstate"), "disabled", "Checking icon state when Community Adblock is disabled");
+        is(element.getAttribute("abpstate"), "disabled", "Checking icon state when Ad Blocking Community is disabled");
         runNextTest();
       }, 0);
     }
